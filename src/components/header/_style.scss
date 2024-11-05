@@ -1,0 +1,35 @@
+header {
+  background-color: #fff;
+  margin: 10px 0;
+  border-radius: 10px;
+  padding: 35px 20px;
+  width: calc(100vw - 350px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  .search {
+    background: #eff3f4;
+    width: 356px;
+    height: 40px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    .input {
+      background: #eff3f4;
+      border: none;
+      outline: none;
+      height: 30px;
+      width: 100%;
+      padding: 0 20px;
+      font-size: 18px;
+    }
+    label {
+      font-size: 22px;
+      margin-right: 20px;
+      margin-top: 5px;
+    }
+  }
+}

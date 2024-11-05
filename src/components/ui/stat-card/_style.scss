@@ -1,0 +1,54 @@
+.stat_card {
+  position: relative;
+  border-radius: 25px;
+  padding: 20px;
+  min-width: 330px;
+  height: 150px;
+  border: 4px solid #eae9f157;
+  background: rgba(255, 255, 255, 0.77);
+  backdrop-filter: blur(7.6px);
+  -webkit-backdrop-filter: blur(7.6px);
+  cursor: pointer;
+  transition: all 0.01s ease-in;
+  overflow: hidden;
+  &:hover {
+    background: rgba(255, 255, 255, 0.946);
+    border: 4px solid #4231af11;
+    transition: all 0.03s ease-in;
+    .icon {
+      transition: all 0.1s ease-in;
+      transform: scale(1.2);
+    }
+  }
+
+  .title {
+    font-size: 12px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  .number {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+    sub {
+      font-size: 16px;
+      color: #fff;
+    }
+  }
+  .icon_wrapper {
+    display: grid;
+    place-items: center;
+    background-image: url('/blob-haikei.svg');
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    border-radius: 50%;
+    color: #fff;
+    .icon {
+      font-size: 30px;
+    }
+  }
+}
